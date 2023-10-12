@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Orbitron:wght@600&family=Tektur:wght@500&display=swap"
+        rel="stylesheet">
+    <title>STR AUTO</title>
+</head>
+<style>
+    body {
+        background: rgba(0, 0, 0, 0.882);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Istok Web', sans-serif;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Tektur', cursive;
+
+
+    }
+
+    h1 {
+        font-size: 40px;
+        text-decoration: overline;
+        font-weight: bolder;
+        text-align: center;
+        color: #f9f6f6;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        color: #f9f6f6;
+    }
+
+    .container,
+    p {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        color: #e98670;
+
+    }
+
+    button {
+        background-color: #64d394;
+        color: white;
+        padding: 12px 20px;
+        border: 1px solid #839bc6;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-family: 'orbitron', sans-serif;
+        font-size: 17px;
+
+    }
+
+    button:hover {
+        background-color: #4b8b4e;
+        cursor: pointer;
+    }
+
+    input[type=file],
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=number],
+    input[type=name],
+
+    textarea,
+    select {
+        background-color: transparent;
+        width: 70%;
+        outline: none;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #071327;
+        border-radius: 8px;
+        box-sizing: border-box;
+        resize: vertical;
+        color: rgba(181, 173, 173, 0.867);
+        font-size: 14px;
+
+
+    }
+
+    label {
+        padding: 0;
+        display: grid;
+    }
+</style>
+
+<body>
+    <img src="IMG_5239.PNG" alt="logo" width="300px">
+    <h1>Questionnaire</h1>
+    <h3>Please fill out this form and answer all of the questions herein to the best of your knowledge.</h3>
+    <div class="container">
+
+        <form action="https://formspree.io/f/mdorzbqq" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Please Enter Your Full Name..">
+            <br>
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Please Enter Your Email Address..">
+            <br>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Please Enter Your Phone Number..">
+            <br>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Please Enter Your Address..">
+            <br>
+            <label for="experience">Years of Experience</label>
+            <select id="experience" name="experience">
+                <option selected disabled value="">Please Select Your Years of Experience..</option>
+                <option value="0-1">0-1</option>
+                <option value="1-3">1-3</option>
+                <option value="3-5">3-5</option>
+                <option value="5-10">5-10</option>
+                <option value="10+">10+</option>
+            </select>
+            <br>
+            <label for="position">Position</label>
+            <select id="position" name="position">
+                <option selected disabled value="">Please Select Position applying for..</option>
+                <option value="trainee">Trainee</option>
+                <option value="dispatcher">Dispatcher</option>
+            </select>
+            <br>
+            <label for="linguistics">What is your English proficiency level? </label>
+            <select id="linguistics" name="linguistics">
+                <option selected disabled value="">Please Select Your English Proficiency Level..</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <label for="ready">How soon are yuo ready to start?</label>
+            <select id="ready" name="ready">
+                <option selected disabled value="">Please Select How Soon You Are Ready To Start..</option>
+                <option value="immediately">Immediately</option>
+                <option value="1-2 weeks">1-2 weeks</option>
+                <option value="2-4 weeks">2-4 weeks</option>
+                <option value="4+ weeks">4+ weeks</option>
+            </select>
+            <br>
+            <label for="quiz">In car hauling logistics, what is the purpose of a "bill of lading" document?</label>
+            <select id="quiz" name="quiz">
+                <option selected disabled value="">Please Select Your Answer..</option>
+                <option value="1"> a. It serves as a checklist for the dispatcher's daily tasks</option>
+                <option value="2">b. It records the condition of vehicles before loading</option>
+                <option value="3">c. It outlines the payment terms for the drivers</option>
+                <option value="4">d. It provides details about the shipment, including pickup and delivery locations,
+                    vehicle information, and special instructions.</option>
+            </select>
+            <br>
+            <label for="quiz">In car hauling, what is the term "deadhead miles" referring to, and how do they impact
+                route efficiency?</label>
+            <select id="quiz" name="quiz">
+                <option selected disabled value="">Please Select Your Answer..</option>
+                <option value="1"> a. It's a type of tire used on haulers, and it doesn't affect route efficiency
+                </option>
+                <option value="2">b. It's the distance traveled with an empty hauler, impacting fuel costs and overall
+                    efficiency</option>
+                <option value="3">c. It's the name of a popular rest stop for car hauler drivers</option>
+                <option value="4">d. It refers to the total distance traveled by a hauler on a single trip, regardless
+                    of the load
+                </option>
+            </select>
+            <br>
+            <label for="quiz">What information should a dispatcher provide to a driver before they begin a route to
+                promote route efficiency?</label>
+            <select id="quiz" name="quiz">
+                <option selected disabled value="">Please Select Your Answer..</option>
+                <option value="1"> a. No information is necessary; drivers should use GPS</option>
+                <option value="2">b. The destination address and nothing more</option>
+                <option value="3">c. Detailed route instructions, including potential delays and alternate routes
+                </option>
+                <option value="4">d. A list of nearby restaurants for meal breaks</option>
+            </select>
+            <br>
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume">
+            <br>
+            <label for="cover">Upload Cover Letter</label>
+            <input type="file" id="cover" name="cover">
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Please Enter Your Message.."></textarea>
+            <br>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<footer>
+    <br>
+    <br>
+    <br>
+    <p>STR AUTO INC</p>
+    <p>© 2016 STR AUTO INC. All Rights Reserved.</p>
+</footer>
+
+</html>
